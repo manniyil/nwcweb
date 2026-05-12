@@ -1,267 +1,139 @@
-/* ========================================
-   SECTION HEADINGS
-======================================== */
+/* ======================================
+   SECTION TITLES
+====================================== */
 
 .section_title_dark h2{
-    position:relative;
-    display:inline-block;
-
-    font-size:2rem;
+    font-size:32px;
     font-weight:700;
-    color:#0f172a;
-
-    letter-spacing:-0.8px;
-
-    margin-bottom:2rem !important;
-}
-
-.section_title_dark h2::after{
-    content:"";
-
-    position:absolute;
-    left:50%;
-    bottom:-10px;
-
-    width:50px;
-    height:3px;
-
-    transform:translateX(-50%);
-
-    background:#2563eb;
-    border-radius:20px;
+    color:#111827;
+    letter-spacing:-0.5px;
 }
 
 
-/* ========================================
-   MAIN SLIDER WRAPPER
-======================================== */
+/* ======================================
+   SLIDER CONTAINER
+====================================== */
 
 .testimonials_container{
     background:#ffffff;
-
-    border-radius:22px;
-
-    padding:14px;
-
-    border:1px solid rgba(226,232,240,.8);
-
-    box-shadow:
-        0 10px 30px rgba(15,23,42,.04);
-
-    transition:all .3s ease;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
 }
 
 
-/* ========================================
-   EACH ANNOUNCEMENT CARD
-======================================== */
+/* ======================================
+   SLIDER ITEMS
+====================================== */
 
 .testimonials_content{
-    background:linear-gradient(
-        to bottom,
-        #ffffff,
-        #fafcff
-    );
-
-    border-radius:18px;
-
-    padding:22px !important;
-
-    border:1px solid #eef2f7;
-
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease,
-        border-color .25s ease;
-}
-
-.testimonials_content:hover{
-    transform:translateY(-4px);
-
-    border-color:#dbeafe;
-
-    box-shadow:
-        0 14px 28px rgba(37,99,235,.08);
+    background:#ffffff;
+    padding:18px !important;
+    border-bottom:1px solid #f1f5f9;
 }
 
 
-/* ========================================
-   TITLE TEXT
-======================================== */
+/* remove border from last item */
+
+.slick-slide:last-child .testimonials_content{
+    border-bottom:none;
+}
+
+
+/* ======================================
+   TITLE
+====================================== */
 
 .text-head p{
-    margin:0 0 12px;
-
-    color:#0f172a;
-
+    margin-bottom:8px;
     font-size:15px;
-
-    line-height:1.7;
-
+    line-height:1.5;
     font-weight:600;
-
-    transition:color .2s ease;
+    color:#111827;
 }
 
 
-/* ========================================
+/* ======================================
    DATE
-======================================== */
+====================================== */
 
 .test_title{
-    display:flex;
-    align-items:center;
-    gap:6px;
-
     font-size:12px;
-
-    color:#64748b;
-
-    font-weight:500;
+    color:#6b7280;
 }
 
 
-/* ========================================
+/* ======================================
    LINKS
-======================================== */
+====================================== */
 
 .testimonials_content a{
     text-decoration:none !important;
 }
 
-.testimonials_content:hover .text-head p{
+.testimonials_content a:hover .text-head p{
     color:#2563eb;
 }
 
 
-/* ========================================
-   STATISTICS CARDS
-======================================== */
+/* ======================================
+   COUNTER BOXES
+====================================== */
 
 .counter{
-    position:relative;
-
     background:#ffffff;
-
-    border-radius:20px;
-
-    padding:22px 14px;
-
-    margin-bottom:18px;
-
-    overflow:hidden;
-
-    border:1px solid #edf2f7;
-
-    box-shadow:
-        0 8px 24px rgba(15,23,42,.04);
-
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease;
-}
-
-.counter::before{
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:4px;
-
-    background:linear-gradient(
-        90deg,
-        #2563eb,
-        #60a5fa
-    );
-}
-
-.counter:hover{
-    transform:translateY(-5px);
-
-    box-shadow:
-        0 18px 32px rgba(15,23,42,.08);
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+    padding:18px 10px;
+    margin-bottom:14px;
 }
 
 
-/* ========================================
-   COUNTER ICON
-======================================== */
+/* ======================================
+   ICONS
+====================================== */
 
 .counter img{
-    width:50px;
-    height:50px;
-
-    margin-bottom:10px;
-
-    opacity:.92;
-
-    transition:transform .25s ease;
-}
-
-.counter:hover img{
-    transform:scale(1.08);
+    width:42px;
+    height:42px;
+    margin-bottom:8px;
 }
 
 
-/* ========================================
-   NUMBER
-======================================== */
+/* ======================================
+   NUMBERS
+====================================== */
 
 .count-title{
-    margin-top:10px;
-
-    font-size:2rem !important;
-
+    font-size:28px !important;
     font-weight:700;
-
-    color:#0f172a;
-
-    letter-spacing:-1px;
+    color:#111827;
+    margin-top:6px;
 }
 
 
-/* ========================================
-   LABEL
-======================================== */
+/* ======================================
+   LABELS
+====================================== */
 
 .milestone_text{
-    margin-top:4px;
-
     font-size:11px;
-
-    font-weight:700;
-
-    letter-spacing:1.4px;
-
-    text-transform:uppercase;
-
-    color:#64748b;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#6b7280;
 }
 
 
-/* ========================================
+/* ======================================
    MOBILE
-======================================== */
+====================================== */
 
 @media(max-width:768px){
 
     .section_title_dark h2{
-        font-size:1.5rem;
+        font-size:24px;
     }
 
     .count-title{
-        font-size:1.5rem !important;
-    }
-
-    .testimonials_content{
-        padding:18px !important;
-    }
-
-    .counter{
-        padding:18px 10px;
+        font-size:22px !important;
     }
 }
