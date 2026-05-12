@@ -1,112 +1,175 @@
-<!-- NWC PREMIUM HOMEPAGE INJECTION -->
+<!-- NWC FORCE REDESIGN -->
 
-<link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/gh/manniyil/nwc-homepage-redesign/homepage-redesign.css?v=10"
->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/gh/manniyil/nwcweb/nwc-premium.css?v=99">
 
 <style>
 
-/* FORCE OVERRIDE LAYER */
+/* ===================================================
+   FORCE LOAD TEST
+   =================================================== */
 
 body{
-overflow-x:hidden !important;
+background:#eef3f5 !important;
 }
 
-/* START AFTER SLIDER */
+/* ===================================================
+   FORCE SECTION REDESIGN
+   =================================================== */
 
-.home{
-margin-bottom:0 !important;
-}
-
-/* REMOVE OLD BOX LOOK */
-
-.card,
-.event,
-.course,
-.service_item,
-.feature,
-.news_post,
-.blog_post{
-border:none !important;
-border-radius:24px !important;
-overflow:hidden !important;
-box-shadow:0 10px 30px rgba(0,0,0,0.08) !important;
-}
-
-/* MODERN SECTION SPACING */
-
+section,
 .events,
 .about,
 .services,
 .news,
+.blog,
+.team,
+.departments,
 .features,
 .counter,
-.team,
-.blog,
-.departments,
-.notice{
-padding-top:80px !important;
-padding-bottom:80px !important;
+.contact,
+.course,
+.popular{
+padding-top:90px !important;
+padding-bottom:90px !important;
+background:transparent !important;
 }
 
-/* PREMIUM SECTION WRAPPER */
+/* ===================================================
+   FORCE CONTAINER STYLE
+   =================================================== */
+
+.container{
+max-width:1280px !important;
+}
 
 .events .container,
 .about .container,
 .services .container,
 .news .container,
-.features .container,
+.blog .container,
 .team .container,
-.blog .container{
+.departments .container,
+.features .container,
+.counter .container,
+.contact .container{
 background:#ffffff !important;
-border-radius:30px !important;
 padding:50px !important;
-box-shadow:0 12px 40px rgba(0,0,0,0.06) !important;
+border-radius:32px !important;
+box-shadow:0 15px 50px rgba(0,0,0,0.07) !important;
 }
 
-/* BUTTONS */
+/* ===================================================
+   FORCE CARD MODERNIZATION
+   =================================================== */
 
-.btn,
-.button,
-a.btn{
-border-radius:60px !important;
-padding:14px 28px !important;
-background:linear-gradient(135deg,#0f4c45,#08362f) !important;
+.card,
+.event,
+.course,
+.course_box,
+.single-item,
+.service_item,
+.feature,
+.news_post,
+.blog_post,
+.item{
+background:#ffffff !important;
 border:none !important;
-font-weight:700 !important;
+border-radius:28px !important;
+overflow:hidden !important;
+box-shadow:0 10px 30px rgba(0,0,0,0.08) !important;
+transition:all .35s ease !important;
 }
 
-/* TITLES */
+.card:hover,
+.event:hover,
+.course:hover,
+.service_item:hover,
+.feature:hover{
+transform:translateY(-10px) !important;
+box-shadow:0 25px 45px rgba(0,0,0,0.12) !important;
+}
 
+/* ===================================================
+   FORCE TITLES
+   =================================================== */
+
+h1,
+h2.section_title,
 .section_title h1,
 .section_title h2,
 .title h2{
 font-size:42px !important;
 font-weight:800 !important;
 color:#0f4c45 !important;
+letter-spacing:-1px !important;
 }
 
-/* HOVER */
+/* ===================================================
+   FORCE BUTTONS
+   =================================================== */
 
-.card:hover,
-.event:hover,
-.course:hover{
-transform:translateY(-8px);
-transition:0.35s ease;
+.btn,
+.button,
+a.btn,
+.read_more a{
+background:linear-gradient(135deg,#0f4c45,#08362f) !important;
+border:none !important;
+border-radius:60px !important;
+padding:14px 30px !important;
+color:#fff !important;
+font-weight:700 !important;
+box-shadow:0 10px 24px rgba(15,76,69,0.18) !important;
 }
 
-/* FOOTER */
+/* ===================================================
+   FORCE IMAGE EFFECT
+   =================================================== */
+
+img{
+transition:all .4s ease !important;
+}
+
+.card:hover img,
+.event:hover img,
+.course:hover img{
+transform:scale(1.04) !important;
+}
+
+/* ===================================================
+   FOOTER
+   =================================================== */
 
 .footer{
+background:linear-gradient(135deg,#062a25,#0f4c45) !important;
 border-top-left-radius:40px !important;
 border-top-right-radius:40px !important;
 overflow:hidden !important;
+padding-top:80px !important;
 }
 
-/* MOBILE */
+.footer *{
+color:#ffffff !important;
+}
+
+/* ===================================================
+   TEST VISUAL
+   =================================================== */
+
+.section_title h1::after,
+.section_title h2::after{
+content:'' !important;
+display:block !important;
+width:80px !important;
+height:5px !important;
+background:#c8a96b !important;
+margin-top:14px !important;
+border-radius:20px !important;
+}
+
+/* ===================================================
+   MOBILE
+   =================================================== */
 
 @media(max-width:768px){
 
@@ -114,17 +177,19 @@ overflow:hidden !important;
 .about .container,
 .services .container,
 .news .container,
-.features .container,
+.blog .container,
 .team .container,
-.blog .container{
+.departments .container{
 padding:24px !important;
 border-radius:22px !important;
 }
 
+h1,
+h2.section_title,
 .section_title h1,
 .section_title h2,
 .title h2{
-font-size:28px !important;
+font-size:30px !important;
 }
 
 }
