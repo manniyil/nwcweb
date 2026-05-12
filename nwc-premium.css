@@ -1,118 +1,91 @@
-/* =========================
-   SECTION TITLES
-========================= */
+/* =========================================
+   STRICTLY SCOPED HOMEPAGE DESIGN
+========================================= */
 
-.section_title_dark h2{
-    font-size:30px;
-    font-weight:600;
-    color:#1f2937;
-}
+/* LEFT + RIGHT MAIN BOX */
 
-
-/* =========================
-   CONTAINER
-========================= */
-
-.testimonials_container{
+.col-md-5 .testimonials_container{
     background:#fff;
-    border:1px solid #f3f4f6;
-    border-radius:10px;
+    border-radius:12px;
+    border:1px solid #ececec;
 }
 
 
-/* =========================
-   ITEMS
-========================= */
+/* EACH CARD */
 
-.testimonials_content{
-    padding:16px !important;
-    border-bottom:1px solid #f5f5f5;
+.col-md-5 .testimonials_content{
     background:#fff;
-}
-
-.slick-slide:last-child .testimonials_content{
-    border-bottom:none;
+    padding:14px !important;
 }
 
 
-/* =========================
-   TITLE
-========================= */
+/* TITLE TEXT */
 
-.text-head p{
-    margin-bottom:6px;
+.col-md-5 .text-head p{
     font-size:14px;
     line-height:1.5;
-    font-weight:500;
-    color:#374151;
+    color:#222;
+    margin-bottom:5px;
 }
 
 
-/* =========================
-   DATE
-========================= */
+/* DATE */
 
-.test_title{
-    font-size:12px;
-    color:#9ca3af;
+.col-md-5 .test_title{
+    font-size:11px;
+    color:#888;
 }
 
 
-/* =========================
-   LINKS
-========================= */
+/* LINKS */
 
-.testimonials_content a{
+.col-md-5 .testimonials_content a{
     text-decoration:none !important;
 }
 
-.testimonials_content a:hover .text-head p{
-    color:#2563eb;
-}
 
+/* COUNTER CARDS ONLY */
 
-/* =========================
-   COUNTERS
-========================= */
-
-.counter{
+.col-md-2 .counter{
     background:#fff;
-    border:1px solid #f3f4f6;
+    border:1px solid #efefef;
     border-radius:10px;
-    padding:16px 10px;
-    margin-bottom:12px;
+    padding:12px 8px;
+    margin-bottom:10px;
 }
 
 
-/* =========================
-   ICONS
-========================= */
+/* ICONS */
 
-.counter img{
-    width:38px;
-    height:38px;
-    opacity:.9;
+.col-md-2 .counter img{
+    width:34px;
+    height:34px;
 }
 
 
-/* =========================
-   NUMBER
-========================= */
+/* NUMBERS */
 
-.count-title{
-    margin-top:6px;
-    font-size:24px !important;
+.col-md-2 .count-title{
+    font-size:22px !important;
     font-weight:600;
-    color:#1f2937;
+    color:#222;
+    margin-top:6px;
 }
 
 
-/* =========================
-   LABEL
-========================= */
+/* LABEL */
 
-.milestone_text{
+.col-md-2 .milestone_text{
     font-size:10px;
-    letter-spacing:.8px;
-    color:#9ca3af;
+    color:#999;
+    letter-spacing:.5px;
+}
+
+
+/* SECTION TITLE */
+
+.section_title_dark h2{
+    font-size:28px;
+    font-weight:600;
+    color:#222;
 }
