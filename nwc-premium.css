@@ -1,7 +1,6 @@
 /* =========================================================
-   NOBLE WOMEN'S COLLEGE
-   MINIMAL MODERNIZATION LAYER
-   VERSION: SOFT UI
+   NWC MINIMAL MODERNIZATION
+   STABLE VERSION
 ========================================================= */
 
 /* =========================================================
@@ -13,14 +12,49 @@
 .skill,
 .testimonials_content,
 .gallery_item,
-.services_button a,
 .about_text,
-.live marquee a {
+.services_button a,
+.btn {
 
     transition:
-        box-shadow .25s ease,
-        transform .25s ease,
-        border-radius .25s ease;
+        transform .22s ease,
+        box-shadow .22s ease,
+        border-radius .22s ease,
+        background .22s ease;
+}
+
+/* =========================================================
+   SECTION TITLES
+========================================================= */
+
+.section_title h2 {
+
+    letter-spacing: 3px;
+
+    font-weight: 800 !important;
+
+    position: relative;
+}
+
+.section_title h2::after {
+
+    content: "";
+
+    width: 55px;
+    height: 3px;
+
+    border-radius: 20px;
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -10px;
+
+    transform: translateX(-50%);
+
+    background: currentColor;
+
+    opacity: .25;
 }
 
 /* =========================================================
@@ -34,22 +68,26 @@
     overflow: hidden;
 
     box-shadow:
-        0 8px 24px rgba(0,0,0,.06);
+        0 8px 24px rgba(0,0,0,.05);
+
+    padding: 10px !important;
 }
 
 .testimonials_content {
 
     border-radius: 16px !important;
 
-    padding: 18px !important;
-
-    margin-bottom: 12px !important;
-
     border:
         1px solid rgba(0,0,0,.04);
 
     box-shadow:
         0 4px 14px rgba(0,0,0,.04);
+
+    padding: 18px !important;
+
+    margin-bottom: 14px !important;
+
+    background: #fff;
 }
 
 .testimonials_content:hover {
@@ -57,7 +95,7 @@
     transform: translateY(-2px);
 
     box-shadow:
-        0 10px 24px rgba(0,0,0,.08);
+        0 10px 22px rgba(0,0,0,.08);
 }
 
 /* =========================================================
@@ -68,13 +106,15 @@
 
     border-radius: 18px !important;
 
-    box-shadow:
-        0 8px 20px rgba(0,0,0,.05);
+    overflow: hidden;
 
     border:
         1px solid rgba(0,0,0,.03);
 
-    overflow: hidden;
+    box-shadow:
+        0 6px 18px rgba(0,0,0,.05);
+
+    padding: 18px 10px !important;
 }
 
 .counter:hover {
@@ -82,7 +122,12 @@
     transform: translateY(-3px);
 
     box-shadow:
-        0 12px 28px rgba(0,0,0,.08);
+        0 10px 24px rgba(0,0,0,.08);
+}
+
+.count-number {
+
+    font-weight: 800 !important;
 }
 
 /* =========================================================
@@ -92,12 +137,14 @@
 .glimp,
 .col-lg-5.pl-4[style*="background-color"] {
 
-    border-radius: 26px !important;
+    border-radius: 24px !important;
 
     overflow: hidden;
 
     box-shadow:
         0 10px 28px rgba(0,0,0,.10);
+
+    position: relative;
 }
 
 .image-director,
@@ -105,28 +152,37 @@
 
     border-radius: 50% !important;
 
+    border:
+        4px solid rgba(255,255,255,.15);
+
     box-shadow:
         0 8px 22px rgba(0,0,0,.18);
+}
 
-    border:
-        4px solid rgba(255,255,255,.12);
+.about_text p {
+
+    line-height: 1.8 !important;
 }
 
 .about_text a {
 
-    border-radius: 40px;
+    border-radius: 30px;
 
     padding:
         6px 14px;
 
+    display: inline-block;
+
     transition:
-        background .25s ease,
-        transform .25s ease;
+        transform .22s ease,
+        opacity .22s ease;
 }
 
 .about_text a:hover {
 
     transform: translateY(-1px);
+
+    opacity: .92;
 }
 
 /* =========================================================
@@ -140,7 +196,7 @@
     overflow: hidden;
 
     box-shadow:
-        0 8px 24px rgba(0,0,0,.08);
+        0 8px 22px rgba(0,0,0,.08);
 }
 
 .gallery_item img {
@@ -158,16 +214,14 @@
 ========================================================= */
 
 .event,
-.event_item,
-.owl-item {
+.event_item {
 
     border-radius: 18px;
-}
 
-.event img,
-.event_item img {
+    overflow: hidden;
 
-    border-radius: 18px;
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.06);
 }
 
 /* =========================================================
@@ -176,15 +230,17 @@
 
 .skill {
 
-    border-radius: 16px !important;
+    border-radius: 14px !important;
 
     overflow: hidden;
 
     box-shadow:
-        0 5px 16px rgba(0,0,0,.06);
+        0 4px 14px rgba(0,0,0,.06);
 
     border:
-        1px solid rgba(255,255,255,.05);
+        1px solid rgba(255,255,255,.04);
+
+    margin-bottom: 14px !important;
 }
 
 .skill:hover {
@@ -192,31 +248,42 @@
     transform: translateY(-2px);
 
     box-shadow:
-        0 10px 24px rgba(0,0,0,.10);
+        0 10px 22px rgba(0,0,0,.10);
 }
 
 .skill a {
 
     padding:
         14px 18px !important;
+
+    display: block;
+}
+
+.skill p {
+
+    margin: 0 !important;
+
+    font-weight: 600 !important;
+
+    letter-spacing: .2px;
 }
 
 /* =========================================================
-   BUTTONS
+   ADMISSION BUTTON
 ========================================================= */
 
 .services_button a,
 .btn,
 button {
 
-    border-radius: 50px !important;
+    border-radius: 40px !important;
 
     box-shadow:
-        0 8px 20px rgba(0,0,0,.10);
+        0 8px 18px rgba(0,0,0,.10);
 
     transition:
-        transform .25s ease,
-        box-shadow .25s ease;
+        transform .22s ease,
+        box-shadow .22s ease;
 }
 
 .services_button a:hover,
@@ -226,7 +293,7 @@ button:hover {
     transform: translateY(-2px);
 
     box-shadow:
-        0 12px 26px rgba(0,0,0,.14);
+        0 12px 24px rgba(0,0,0,.14);
 }
 
 /* =========================================================
@@ -236,18 +303,18 @@ button:hover {
 .live {
 
     box-shadow:
-        0 4px 18px rgba(0,0,0,.08);
+        0 4px 18px rgba(0,0,0,.06);
 }
 
 .live marquee a {
 
-    border-radius: 40px;
+    border-radius: 30px;
 
     padding:
-        10px 20px !important;
+        10px 18px !important;
 
     box-shadow:
-        0 6px 18px rgba(0,0,0,.10);
+        0 6px 14px rgba(0,0,0,.08);
 }
 
 /* =========================================================
@@ -257,17 +324,34 @@ button:hover {
 footer .quick_links a,
 .footer .quick_links a {
 
-    border-radius: 12px;
+    border-radius: 10px;
 
     transition:
-        background .25s ease,
-        transform .25s ease;
+        transform .22s ease,
+        background .22s ease;
 }
 
 footer .quick_links a:hover,
 .footer .quick_links a:hover {
 
     transform: translateY(-1px);
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+
+    border-radius: 20px;
+
+    background:
+        rgba(0,0,0,.25);
 }
 
 /* =========================================================
@@ -282,13 +366,18 @@ footer .quick_links a:hover,
         margin-bottom: 20px;
     }
 
-    .skill {
-
-        margin-bottom: 14px !important;
-    }
-
     .testimonials_content {
 
         padding: 16px !important;
+    }
+
+    .skill {
+
+        margin-bottom: 12px !important;
+    }
+
+    .section_title h2 {
+
+        letter-spacing: 2px;
     }
 }
