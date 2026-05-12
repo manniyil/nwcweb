@@ -1,383 +1,57 @@
-/* =========================================================
-   NWC MINIMAL MODERNIZATION
-   STABLE VERSION
-========================================================= */
+/* Modern Glass UI */
 
-/* =========================================================
-   GLOBAL SMOOTHNESS
-========================================================= */
-
-.card,
-.counter,
-.skill,
-.testimonials_content,
-.gallery_item,
-.about_text,
-.services_button a,
-.btn {
-
-    transition:
-        transform .22s ease,
-        box-shadow .22s ease,
-        border-radius .22s ease,
-        background .22s ease;
+body {
+    background: #f4f7fb;
+    font-family: "Inter", sans-serif;
+    color: #1e293b;
 }
 
-/* =========================================================
-   SECTION TITLES
-========================================================= */
-
-.section_title h2 {
-
-    letter-spacing: 3px;
-
-    font-weight: 800 !important;
-
-    position: relative;
-}
-
-.section_title h2::after {
-
-    content: "";
-
-    width: 55px;
-    height: 3px;
-
-    border-radius: 20px;
-
-    position: absolute;
-
-    left: 50%;
-    bottom: -10px;
-
-    transform: translateX(-50%);
-
-    background: currentColor;
-
-    opacity: .25;
-}
-
-/* =========================================================
-   NOTIFICATIONS / ANNOUNCEMENTS
-========================================================= */
-
-.testimonials_container {
-
-    border-radius: 22px !important;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 8px 24px rgba(0,0,0,.05);
-
-    padding: 10px !important;
-}
-
-.testimonials_content {
-
-    border-radius: 16px !important;
-
-    border:
-        1px solid rgba(0,0,0,.04);
-
-    box-shadow:
-        0 4px 14px rgba(0,0,0,.04);
-
-    padding: 18px !important;
-
-    margin-bottom: 14px !important;
-
-    background: #fff;
-}
-
-.testimonials_content:hover {
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 10px 22px rgba(0,0,0,.08);
-}
-
-/* =========================================================
-   COUNTERS
-========================================================= */
-
-.counter {
-
+/* Cards */
+.card {
+    border: none !important;
     border-radius: 18px !important;
-
-    overflow: hidden;
-
-    border:
-        1px solid rgba(0,0,0,.03);
-
+    background: rgba(255,255,255,0.75) !important;
+    backdrop-filter: blur(12px);
     box-shadow:
-        0 6px 18px rgba(0,0,0,.05);
-
-    padding: 18px 10px !important;
+        0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
 }
 
-.counter:hover {
-
-    transform: translateY(-3px);
-
+.card:hover {
+    transform: translateY(-4px);
     box-shadow:
-        0 10px 24px rgba(0,0,0,.08);
+        0 16px 40px rgba(0,0,0,0.12);
 }
 
-.count-number {
-
-    font-weight: 800 !important;
+/* Buttons */
+.btn,
+button {
+    border-radius: 12px !important;
+    transition: all 0.25s ease;
 }
 
-/* =========================================================
-   LEADERSHIP SECTION
-========================================================= */
-
-.glimp,
-.col-lg-5.pl-4[style*="background-color"] {
-
-    border-radius: 24px !important;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 10px 28px rgba(0,0,0,.10);
-
-    position: relative;
-}
-
-.image-director,
-.about_text img {
-
-    border-radius: 50% !important;
-
-    border:
-        4px solid rgba(255,255,255,.15);
-
-    box-shadow:
-        0 8px 22px rgba(0,0,0,.18);
-}
-
-.about_text p {
-
-    line-height: 1.8 !important;
-}
-
-.about_text a {
-
-    border-radius: 30px;
-
-    padding:
-        6px 14px;
-
-    display: inline-block;
-
-    transition:
-        transform .22s ease,
-        opacity .22s ease;
-}
-
-.about_text a:hover {
-
-    transform: translateY(-1px);
-
-    opacity: .92;
-}
-
-/* =========================================================
-   GALLERY
-========================================================= */
-
-.gallery_item {
-
-    border-radius: 18px !important;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 8px 22px rgba(0,0,0,.08);
-}
-
-.gallery_item img {
-
-    transition: transform .35s ease;
-}
-
-.gallery_item:hover img {
-
+.btn:hover,
+button:hover {
     transform: scale(1.03);
 }
 
-/* =========================================================
-   EVENTS / ACTIVITIES
-========================================================= */
-
-.event,
-.event_item {
-
-    border-radius: 18px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 8px 20px rgba(0,0,0,.06);
+/* Headings */
+h1, h2, h3, h4 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
-/* =========================================================
-   PROGRAMS SECTION
-========================================================= */
-
-.skill {
-
-    border-radius: 14px !important;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 4px 14px rgba(0,0,0,.06);
-
-    border:
-        1px solid rgba(255,255,255,.04);
-
-    margin-bottom: 14px !important;
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.7) !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-.skill:hover {
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 10px 22px rgba(0,0,0,.10);
-}
-
-.skill a {
-
-    padding:
-        14px 18px !important;
-
-    display: block;
-}
-
-.skill p {
-
-    margin: 0 !important;
-
-    font-weight: 600 !important;
-
-    letter-spacing: .2px;
-}
-
-/* =========================================================
-   ADMISSION BUTTON
-========================================================= */
-
-.services_button a,
-.btn,
-button {
-
-    border-radius: 40px !important;
-
-    box-shadow:
-        0 8px 18px rgba(0,0,0,.10);
-
+/* Smooth animations */
+* {
     transition:
-        transform .22s ease,
-        box-shadow .22s ease;
-}
-
-.services_button a:hover,
-.btn:hover,
-button:hover {
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 12px 24px rgba(0,0,0,.14);
-}
-
-/* =========================================================
-   LIVE ADMISSION BAR
-========================================================= */
-
-.live {
-
-    box-shadow:
-        0 4px 18px rgba(0,0,0,.06);
-}
-
-.live marquee a {
-
-    border-radius: 30px;
-
-    padding:
-        10px 18px !important;
-
-    box-shadow:
-        0 6px 14px rgba(0,0,0,.08);
-}
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer .quick_links a,
-.footer .quick_links a {
-
-    border-radius: 10px;
-
-    transition:
-        transform .22s ease,
-        background .22s ease;
-}
-
-footer .quick_links a:hover,
-.footer .quick_links a:hover {
-
-    transform: translateY(-1px);
-}
-
-/* =========================================================
-   SCROLLBAR
-========================================================= */
-
-::-webkit-scrollbar {
-
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-
-    border-radius: 20px;
-
-    background:
-        rgba(0,0,0,.25);
-}
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media(max-width:992px){
-
-    .glimp,
-    .col-lg-5.pl-4[style*="background-color"] {
-
-        margin-bottom: 20px;
-    }
-
-    .testimonials_content {
-
-        padding: 16px !important;
-    }
-
-    .skill {
-
-        margin-bottom: 12px !important;
-    }
-
-    .section_title h2 {
-
-        letter-spacing: 2px;
-    }
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
 }
