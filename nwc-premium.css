@@ -1,137 +1,251 @@
-/* =========================
-   SECTION TITLES
-========================= */
+/* ========================================
+   SECTION HEADINGS
+======================================== */
 
 .section_title_dark h2{
+    position:relative;
+    display:inline-block;
+
     font-size:2rem;
     font-weight:700;
-    color:#111827;
-    letter-spacing:-0.5px;
+    color:#0f172a;
+
+    letter-spacing:-0.8px;
+
+    margin-bottom:2rem !important;
+}
+
+.section_title_dark h2::after{
+    content:"";
+
+    position:absolute;
+    left:50%;
+    bottom:-10px;
+
+    width:50px;
+    height:3px;
+
+    transform:translateX(-50%);
+
+    background:#2563eb;
+    border-radius:20px;
 }
 
 
-/* =========================
-   SLIDER CONTAINERS
-========================= */
+/* ========================================
+   MAIN SLIDER WRAPPER
+======================================== */
 
 .testimonials_container{
-    background:#fff;
-    border-radius:16px;
-    padding:10px;
-    border:1px solid #e5e7eb;
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:14px;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+        0 10px 30px rgba(15,23,42,.04);
+
+    transition:all .3s ease;
 }
 
 
-/* =========================
-   ANNOUNCEMENT / NOTIFICATION ITEM
-========================= */
+/* ========================================
+   EACH ANNOUNCEMENT CARD
+======================================== */
 
 .testimonials_content{
-    background:#fff;
-    border-radius:14px;
-    padding:18px !important;
-    border:1px solid #f1f5f9;
-    transition:all .2s ease;
+    background:linear-gradient(
+        to bottom,
+        #ffffff,
+        #fafcff
+    );
+
+    border-radius:18px;
+
+    padding:22px !important;
+
+    border:1px solid #eef2f7;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
 }
 
 .testimonials_content:hover{
-    transform:translateY(-2px);
+    transform:translateY(-4px);
+
     border-color:#dbeafe;
+
+    box-shadow:
+        0 14px 28px rgba(37,99,235,.08);
 }
 
 
-/* =========================
+/* ========================================
    TITLE TEXT
-========================= */
+======================================== */
 
 .text-head p{
-    margin:0 0 10px;
+    margin:0 0 12px;
+
+    color:#0f172a;
+
     font-size:15px;
+
+    line-height:1.7;
+
     font-weight:600;
-    line-height:1.6;
-    color:#111827;
+
+    transition:color .2s ease;
 }
 
 
-/* =========================
+/* ========================================
    DATE
-========================= */
+======================================== */
 
 .test_title{
-    font-size:13px;
-    color:#6b7280;
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    font-size:12px;
+
+    color:#64748b;
+
+    font-weight:500;
 }
 
 
-/* =========================
+/* ========================================
    LINKS
-========================= */
+======================================== */
 
 .testimonials_content a{
     text-decoration:none !important;
 }
 
-.testimonials_content a:hover .text-head p{
+.testimonials_content:hover .text-head p{
     color:#2563eb;
 }
 
 
-/* =========================
-   COUNTER CARDS
-========================= */
+/* ========================================
+   STATISTICS CARDS
+======================================== */
 
 .counter{
-    background:#fff;
-    border-radius:16px;
-    padding:20px 12px;
-    margin-bottom:16px;
-    border:1px solid #e5e7eb;
-    transition:all .2s ease;
+    position:relative;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:22px 14px;
+
+    margin-bottom:18px;
+
+    overflow:hidden;
+
+    border:1px solid #edf2f7;
+
+    box-shadow:
+        0 8px 24px rgba(15,23,42,.04);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.counter::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #60a5fa
+    );
 }
 
 .counter:hover{
-    transform:translateY(-3px);
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 18px 32px rgba(15,23,42,.08);
 }
 
 
-/* =========================
-   COUNTER NUMBER
-========================= */
+/* ========================================
+   COUNTER ICON
+======================================== */
+
+.counter img{
+    width:50px;
+    height:50px;
+
+    margin-bottom:10px;
+
+    opacity:.92;
+
+    transition:transform .25s ease;
+}
+
+.counter:hover img{
+    transform:scale(1.08);
+}
+
+
+/* ========================================
+   NUMBER
+======================================== */
 
 .count-title{
     margin-top:10px;
-    font-size:28px !important;
+
+    font-size:2rem !important;
+
     font-weight:700;
-    color:#111827;
+
+    color:#0f172a;
+
+    letter-spacing:-1px;
 }
 
 
-/* =========================
-   COUNTER LABEL
-========================= */
+/* ========================================
+   LABEL
+======================================== */
 
 .milestone_text{
+    margin-top:4px;
+
     font-size:11px;
-    font-weight:600;
-    letter-spacing:1px;
-    color:#6b7280;
+
+    font-weight:700;
+
+    letter-spacing:1.4px;
+
+    text-transform:uppercase;
+
+    color:#64748b;
 }
 
 
-/* =========================
-   ICONS
-========================= */
-
-.counter img{
-    width:48px;
-    height:48px;
-    opacity:.9;
-}
-
-
-/* =========================
+/* ========================================
    MOBILE
-========================= */
+======================================== */
 
 @media(max-width:768px){
 
@@ -140,10 +254,14 @@
     }
 
     .count-title{
-        font-size:22px !important;
+        font-size:1.5rem !important;
     }
 
-    .testimonials_container{
-        height:auto !important;
+    .testimonials_content{
+        padding:18px !important;
+    }
+
+    .counter{
+        padding:18px 10px;
     }
 }
